@@ -6,6 +6,7 @@ import BendWaves from "@/pipelines/BendWavesPostFX";
 import BendWaves2 from "@/pipelines/BendWavesPostFX2";
 import { title, version } from "@/version.json";
 
+import hub from '@/assets/images/Hub.json';
 export class PreloadScene extends BaseScene {
 	constructor() {
 		super({ key: "PreloadScene" });
@@ -71,12 +72,17 @@ export class PreloadScene extends BaseScene {
 		for (let audio of audios) {
 			this.load.audio(audio.key, audio.path);
 		}
+		
+		this.load.tilemapTiledJSON({
+			key: 'tilemap', 
+			url: hub,
+		});
 	}
 
 	create() {
 		this.fade(true, 100, 0x000000);
 		this.addEvent(100, () => {
-			this.scene.start("TitleScene");
+			this.scene.start("GameScene");
 		});
 	}
 }

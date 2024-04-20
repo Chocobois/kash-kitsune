@@ -19,6 +19,7 @@
 		"@electron/asar": "^3.2.9",
 		"@neutralinojs/neu": "^11.0.1",
 		"png-to-ico": "^2.1.8",
+		"prettier": "^3.2.5",
 		"resedit": "^2.0.0",
 		"rimraf": "^5.0.5",
 		"sharp": "^0.33.3",

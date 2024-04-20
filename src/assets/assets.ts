@@ -8,6 +8,7 @@ const images: Image[] = [
 
 	// Characters
 	image('characters/player', 'player'),
+	image('characters/fox', 'fox'),
 
 	// Items
 	image('items/coin', 'coin'),
@@ -20,6 +21,10 @@ const images: Image[] = [
 	image('titlescreen/background', 'title_background'),
 	image('titlescreen/foreground', 'title_foreground'),
 	image('titlescreen/character', 'title_character'),
+
+	// Tilesets
+	image('tilesets/roguelikeDungeon_transparent', 'RougelikeDungeonPack'),
+	image('tilesets/roguelikeIndoor_transparent', 'RougelikeInteriorPack'),
 ];
 
 /* Spritesheets */
